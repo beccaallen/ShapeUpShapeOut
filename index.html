@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up or Shape Out</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="apps.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-sm">
+
+        <div class="wrapMe p-8">
+            <div class="header row d-flex justify-content-center align-items-center mb-5">
+                <div class="title flex col-5 justify-content-start">
+                    <h1>Add Shapes</h1>
+                    <div class="decorativeShapes">
+                        <div class="toprectangle"></div>
+                        <div class="topsquare"></div>
+                        <div class="topcircle"></div>
+                        <div class="toptriangle"></div>
+                    </div>
+                </div>
+                <div class="shapeInput flex col-7 justify-content-flex-end mt-4">
+                    <div class="input-group mb-2 RECTANGLE">
+                        <button class="btn r btn-outline-secondary" type="button" id="button-addon-rectangle">+
+                            Rectangle</button>
+                        <input type="text" aria-label="Height" class="form-control heightInput" placeholder="height px">
+                        <input type="text" aria-label="Width" class="form-control widthInput" placeholder="width px">
+                    </div>
+                    <div class="input-group mb-2 SQUARE">
+                        <button class="btn s btn-outline-secondary" type="button" id="button-addon-square">+
+                            Square</button>
+                        <input type="text" class="form-control side-length" placeholder="side-length px"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="input-group mb-2 CIRCLE">
+                        <button class="btn c btn-outline-secondary" type="button" id="button-addon-circle">+
+                            Circle</button>
+                        <input type="text" class="form-control radius" placeholder="radius px"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="input-group mb-2 TRIANGLE">
+                        <button class="btn t btn-outline-secondary" type="button" id="button-addon-triangle">+
+                            Triangle</button>
+                        <input type="text" class="form-control triHeight" placeholder="height px"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </div>
+            </div>
+            <div class="sketchheader">
+                <h3>Sketchpad</h3>
+            </div>
+            <div class="sketchpad"></div>
+            <div class="panel row">
+                <div class="shapeInput col-7">
+                    <div class="input-group flex mb-2">
+                        <button class="btn r btn-outline-secondary" type="button" id="button-addon-rectangle"
+                            disabled>Shape</button>
+                        <input type="text"  class="form-control shapeInfo">
+                    </div>
+                    <div class="input-group mb-2">
+                        <button class="btn c btn-outline-secondary" type="button" id="button-addon-circle"
+                        disabled>Height</button>
+                        <input type="text" class="form-control heightInfo">
+                    </div>
+                    <div class="input-group mb-2">
+                        <button class="btn s btn-outline-secondary" type="button" id="button-addon-square"
+                            disabled>Width</button>
+                        <input type="text" class="form-control widthInfo">
+                    </div>
+                    <div class="input-group mb-2">
+                        <button class="btn t btn-outline-secondary" type="button" id="button-addon-triangle" disabled>
+                            Radius</button>
+                        <input type="text" class="form-control radiusInfo">
+                    </div>
+                    <div class="input-group mb-2">
+                        <button class="btn t btn-outline-secondary" type="button" id="button-addon-triangle" disabled>
+                            Area</button>
+                        <input type="text" class="form-control areaInfo">
+                    </div>
+                    <div class="input-group mb-2">
+                        <button class="btn t btn-outline-secondary" type="button" id="button-addon-triangle" disabled>
+                            Perimeter</button>
+                        <input type="text" class="form-control perimeterInfo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
